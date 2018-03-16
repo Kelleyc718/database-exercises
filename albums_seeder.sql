@@ -1,4 +1,5 @@
 USE codeup_test_db;
+
 INSERT INTO albums (artist, name, release_date, sales, genre)
     VALUES ('Various artists', 'Grease: The Original Soundtrack', 1978, 38,
             'Soundtrack'),
