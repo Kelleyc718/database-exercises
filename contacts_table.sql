@@ -1,0 +1,12 @@
+USE contacts_db;
+CREATE TABLE IF NOT EXISTS contacts (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  first_name VARCHAR(50) DEFAULT 'NONE',
+  middle_initial CHAR(2) DEFAULT 'NA',
+  last_name VARCHAR(50) NOT NULL,
+  phone_number VARCHAR(11) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  created_at TIMESTAMP NOT NULL,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+);
