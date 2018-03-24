@@ -54,4 +54,9 @@ SELECT e.gender, avg(salary)
 FROM salaries AS sal
 JOIN employees AS e
 ON sal.emp_no = e.emp_no
-GROUP BY e.gender
+GROUP BY e.gender;
+
+SELECT concat(Max(salary))
+FROM salaries
+LIMIT 2;
+
